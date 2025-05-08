@@ -1,4 +1,4 @@
-✅ Ngày 1 - Tổng quan & cấu trúc cơ bản của C
+# ✅ Ngày 1 - Tổng quan & cấu trúc cơ bản của C
 1. Ngôn ngữ C là gì?
 C là một ngôn ngữ lập trình thấp hơn C++, cực kỳ nhanh, tối ưu hiệu suất, và được dùng trong hệ thống nhúng, kernel, embedded, driver, OS, v.v.
 
