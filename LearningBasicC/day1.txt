@@ -1,0 +1,51 @@
+✅ Ngày 1 - Tổng quan & cấu trúc cơ bản của C
+1. Ngôn ngữ C là gì?
+C là một ngôn ngữ lập trình thấp hơn C++, cực kỳ nhanh, tối ưu hiệu suất, và được dùng trong hệ thống nhúng, kernel, embedded, driver, OS, v.v.
+
+So với C++: C tối giản hơn, không hỗ trợ OOP, virtual functions, exception.
+
+2. Cấu trúc chương trình C đơn giản:
+c
+Copy
+Edit
+#include <stdio.h>  // Thư viện chuẩn để in, nhập dữ liệu
+
+int main(void) {
+    printf("Hello, world!\n");
+    return 0;  // Trả về mã thoát cho OS, 0 nghĩa là thành công
+}
+✅ #include <stdio.h>: dùng để gọi printf, scanf,...
+
+✅ int main(void): chuẩn C hiện đại. void main() không đúng chuẩn.
+
+✅ return 0;: bắt buộc để trả mã thoát cho hệ điều hành (success/failure).
+
+3. Hàm main() có tham số dòng lệnh:
+c
+Copy
+Edit
+int main(int argc, char *argv[]) {
+    // argc: số đối số dòng lệnh
+    // argv: mảng chuỗi chứa các đối số
+}
+Ví dụ chạy:
+
+bash
+Copy
+Edit
+./program hello world
+Kết quả:
+
+bash
+Copy
+Edit
+argc = 3
+argv[0] = ./program
+argv[1] = hello
+argv[2] = world
+4. Tại sao vẫn cần C thời hiện đại
+C vẫn mạnh vì: tốc độ, kiểm soát bộ nhớ, linh hoạt cho embedded, kernel,...
+
+C++ tiện hơn nhưng C gọn, dễ kiểm soát và phù hợp cho hệ thống hiệu năng cao.
+
+Không phải "ai tiện hơn thì thắng", mà ai nhanh hơn trong tầng lõi vẫn rất quan trọng.
